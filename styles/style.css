@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    background: hsl(0, 100%, 74%);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.invisible{
+    display: none;
+    visibility: hidden;
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/bg-intro-mobile.png) no-repeat;
+    background-position: center;
+}
+
+main{
+    padding: 3rem 1rem;
+
+    text-align: center;
+}
+
+.welcome-message h1{
+    color: #fff;
+
+    width: 20rem;
+
+    margin: 0 auto;
+}
+
+.welcome-message p{
+    color: #fff;
+    width: 20rem;
+
+    margin: 1rem auto 2rem;
+}
+
+.forms-section{
+    margin: 3rem auto;
+}
+
+.free-days{
+    background: hsl(248, 32%, 49%);
+    color: #fff;   
+    
+    width: 23rem;
+
+    margin: 3rem auto;
+    padding: 1.5rem 3rem;
+
+    border-radius: .7rem;
+    box-shadow: 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.free-days span{
+    font-weight: 600;
+}
+
+form{
+    background: #fff;
+
+    box-shadow: 0 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: .7rem;
+
+    padding: 1rem 1rem 2rem;
+
+    width: 23rem;
+
+    margin: 0 auto;
+}
+
+form input{
+    clear: right;
+    display: both;
+
+    padding: 1rem 2rem 1rem .9rem;
+    margin: 1rem auto 0rem;
+
+    width: 20rem;
+
+    border-radius: .3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input[placeholder]{
+    font-weight: 600;
+
+    color: hsl(249, 10%, 26%) ;
+}
+
+.btn{
+    text-align: center;
+
+    padding: 1rem 2rem 1rem .9rem;
+    margin: 1rem auto;
+
+    width: 20rem;
+
+    border-radius: .3rem;
+    border: transparent;
+
+    background: hsl(154, 59%, 51%);
+
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.btn:hover{
+    transition: all .2s ease-in-out;
+    opacity: .8;
+}
+
+.agreements{
+    color: hsl(246, 25%, 77%);
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2;
+
+    margin: 0 2rem;
+
+    user-select: none;
+}
+
+.agreements span a{
+    color:  hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.agreements span a:hover{
+    transform: all .2s ease-in-out;
+    opacity: .8;
+}
+
+span.error{
+    float: right;
+
+    color:  hsl(0, 100%, 74%);
+    font-size: 13px;
+
+    user-select: none;
+    margin: .3rem .8rem;
+}
+
+.border-error{
+    border: 1px solid  hsl(0, 100%, 74%) ;
+    outline-color: hsl(0, 100%, 74%) ;
+}
+

@@ -101,12 +101,25 @@ form input{
 
     border-radius: .3rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    position: relative;
 }
 
 input[placeholder]{
     font-weight: 600;
 
     color: hsl(249, 10%, 26%) ;
+}
+
+.form-control{
+    position: relative;
+}
+
+.icon-error{
+    position: absolute;
+
+    top: 30px;
+    right: 30px;
 }
 
 .btn{

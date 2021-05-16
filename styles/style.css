@@ -92,7 +92,6 @@ form{
 
 form input{
     clear: right;
-    display: both;
 
     padding: 1rem 2rem 1rem .9rem;
     margin: 1rem auto 0rem;
@@ -111,15 +110,39 @@ input[placeholder]{
     color: hsl(249, 10%, 26%) ;
 }
 
-.form-control{
+.form-control {
     position: relative;
 }
 
-.icon-error{
+.form-control i {
     position: absolute;
 
-    top: 30px;
-    right: 30px;
+    right: 2rem;
+    bottom: .5rem;
+
+    visibility: hidden;
+}
+
+small{
+    float: right;
+
+    color:  hsl(0, 100%, 74%);
+    font-size: 13px;
+
+    user-select: none;
+    margin: .3rem .8rem 0rem;
+
+    visibility: hidden;
+    display: none;
+}
+
+.form-control.error i, .form-control.error small{
+    visibility: visible;
+    display: block;
+}
+
+.form-control.error input{
+    border-color: hsl(0, 100%, 74%) ;
 }
 
 .btn{
@@ -172,19 +195,3 @@ input[placeholder]{
     transform: all .2s ease-in-out;
     opacity: .8;
 }
-
-span.error{
-    float: right;
-
-    color:  hsl(0, 100%, 74%);
-    font-size: 13px;
-
-    user-select: none;
-    margin: .3rem .8rem;
-}
-
-.border-error{
-    border: 1px solid  hsl(0, 100%, 74%) ;
-    outline-color: hsl(0, 100%, 74%) ;
-}
-
